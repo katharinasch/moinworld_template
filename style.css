@@ -1,0 +1,230 @@
+/* Global Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	margin: 30px 0;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+p {
+	margin: 30px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a, a:active {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+a:hover {
+	opacity: 0.9;
+}
+
+
+hr {
+ 	width: 150px;
+ 	height: 2px;
+ 	background-color: #002a32;
+ 	border: 0;
+ 	margin-bottom: 30px;
+}
+
+section, footer {
+ 	display: flex;
+ 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+section:not(#home) {
+	padding: 200px 200px;
+}
+
+/* Navbar */
+
+header {
+	background-color: #002a32;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	height: 11%;
+	z-index: 10;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+nav {
+	padding-right: 25px;
+}
+
+nav a {
+	color: white;
+}
+
+nav li {
+	display: inline;
+	margin: 0 10px;
+}
+
+@media (max-width: 767px) {
+	header{ 
+		display: flex;
+		justify-content: center;
+	}
+
+	nav {
+		padding-right: 0px;
+	}	
+
+	section:not(#home) {
+		padding: 200px 50px;
+	}
+
+	h1, footer {
+		padding: 0 10px;
+	}
+}
+
+
+/* Home */
+
+#profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.banner {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	padding: 250px 0;
+}
+
+.home-content a:hover {
+	opacity: 1;
+}
+
+.btn {
+	padding: 20px;
+	font-size: 15px;
+	border-radius: 15px;
+	border: none;
+	background-color: #dad7cd;
+	color: #002a32;
+	font-weight: 700;
+	cursor: pointer;
+
+}
+
+/* About */
+
+#about {
+	background-color: #f4f3ee;
+}
+
+#about img {
+	width: 20%;
+	height: 20%;
+}
+
+@media (max-width: 767px) {
+	#about img {
+		width: 60%;
+		height: 60%;
+	}
+}
+
+/* Hobbies */
+.grid {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.grid ul {
+	display: flex;
+	width: 80%;
+	flex-direction: row;
+	align-items: center;
+}
+
+.second-list-item {
+	margin: 0 100px;
+}
+
+.grid i {
+	font-size: 60px;
+	color: #033623;
+}
+
+@media (max-width: 767px) {
+	.grid ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.second-list-item {
+		margin: 0;
+	}
+}
+
+
+
+/* Contact me */
+
+#contacts {
+	background-color: #f4f3ee;
+	min-height: 70vh;
+}
+
+
+#contacts li {
+	display: inline;
+	margin: 0 10px;
+}
+
+#contacts i {
+	color: #495057;
+	font-size: 30px;
+}
+
+/* Footer */
+
+footer {
+	background-color: #002a32;
+	color: white;
+	font-size: 12px;
+}
+
+
